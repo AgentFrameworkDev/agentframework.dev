@@ -354,11 +354,20 @@ button:focus-visible {
   margin-top: var(--spacing-sm);
 }
 
+.sponsor-grid--past {
+  margin-top: var(--spacing-sm);
+}
+
 .sponsor-card {
   background: var(--color-surface-elevated);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: var(--spacing-md);
+}
+
+.sponsor-card--past {
+  display: flex;
+  flex-direction: column;
 }
 
 .sponsor-card__title {

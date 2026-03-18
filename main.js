@@ -32,20 +32,35 @@
   }
 
   /**
-   * Randomize the order of instructor list items
+   * Randomize the order of an element's direct children
+   * @param {string} elementId - The id of the element to randomize
    */
-  function randomizeInstructors() {
-    var list = document.getElementById('instructor-list');
-    if (!list) {
+  function randomizeElementChildren(elementId) {
+    var element = document.getElementById(elementId);
+    if (!element) {
       return;
     }
 
-    var items = Array.prototype.slice.call(list.children);
+    var items = Array.prototype.slice.call(element.children);
     var shuffled = shuffleArray(items);
 
     shuffled.forEach(function (item) {
-      list.appendChild(item);
+      element.appendChild(item);
     });
+  }
+
+  /**
+   * Randomize the order of instructor list items
+   */
+  function randomizeInstructors() {
+    randomizeElementChildren('instructor-list');
+  }
+
+  /**
+   * Randomize the order of past sponsor cards
+   */
+  function randomizePastSponsors() {
+    randomizeElementChildren('past-sponsors-grid');
   }
 
   /**
@@ -54,6 +69,7 @@
   function init() {
     setCurrentYear();
     randomizeInstructors();
+    randomizePastSponsors();
   }
 
   // Run initialization when DOM is ready
