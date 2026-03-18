@@ -10,6 +10,8 @@
   --color-background: #0b0d12;
   --color-surface: rgba(255, 255, 255, 0.06);
   --color-surface-elevated: rgba(255, 255, 255, 0.10);
+  --color-card-top: rgba(18, 22, 30, 0.88);
+  --color-card-bottom: rgba(10, 13, 19, 0.94);
   --color-text-primary: rgba(255, 255, 255, 0.92);
   --color-text-secondary: rgba(255, 255, 255, 0.70);
   --color-text-tertiary: rgba(255, 255, 255, 0.55);
@@ -45,6 +47,8 @@
     --color-background: #f7f8fb;
     --color-surface: rgba(0, 0, 0, 0.04);
     --color-surface-elevated: rgba(0, 0, 0, 0.06);
+    --color-card-top: rgba(255, 255, 255, 0.88);
+    --color-card-bottom: rgba(249, 250, 253, 0.94);
     --color-text-primary: rgba(0, 0, 0, 0.88);
     --color-text-secondary: rgba(0, 0, 0, 0.70);
     --color-text-tertiary: rgba(0, 0, 0, 0.56);
@@ -185,7 +189,7 @@ button:focus-visible {
    Cards
    -------------------------------------------------------------------------- */
 .card {
-  background: linear-gradient(180deg, var(--color-surface), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(180deg, var(--color-card-top), var(--color-card-bottom));
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
