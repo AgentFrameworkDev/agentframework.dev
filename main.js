@@ -57,6 +57,13 @@
   }
 
   /**
+   * Randomize the order of community partner cards
+   */
+  function randomizeCommunityPartners() {
+    randomizeElementChildren('community-partners-grid');
+  }
+
+  /**
    * Randomize the order of past sponsor cards
    */
   function randomizePastSponsors() {
@@ -69,6 +76,7 @@
   function init() {
     setCurrentYear();
     randomizeInstructors();
+    randomizeCommunityPartners();
     randomizePastSponsors();
   }
 
