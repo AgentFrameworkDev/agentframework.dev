@@ -234,6 +234,65 @@ button:focus-visible {
   margin: var(--spacing-lg) 0 var(--spacing-sm);
 }
 
+.memory-event {
+  margin-top: var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.memory-event[open] {
+  background: var(--color-surface-elevated);
+}
+
+.memory-event__summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.memory-event__summary::-webkit-details-marker {
+  display: none;
+}
+
+.memory-event__summary::after {
+  content: '+';
+  float: right;
+  color: var(--color-text-tertiary);
+}
+
+.memory-event[open] .memory-event__summary::after {
+  content: '\2212';
+}
+
+.memory-event__body {
+  padding: 0 16px;
+}
+
+.memory-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--spacing-md);
+  padding: 16px;
+}
+
+.memory-figure {
+  margin: 0;
+}
+
+.memory-figure--wide {
+  grid-column: 1 / -1;
+}
+
+.memory-caption {
+  margin-top: var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
 /* --------------------------------------------------------------------------
    Hero Section
    -------------------------------------------------------------------------- */
@@ -298,8 +357,8 @@ button:focus-visible {
   width: 100%;
   max-width: 100%;
   height: auto;
+  display: block;
   border-radius: var(--radius-md);
-  margin-top: var(--spacing-md);
   border: 1px solid var(--color-border);
 }
 
