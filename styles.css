@@ -362,6 +362,10 @@ button:focus-visible {
   border: 1px solid var(--color-border);
 }
 
+.presenters-photo {
+  margin-top: var(--spacing-sm);
+}
+
 .sponsor-logo {
   max-width: 240px;
   height: auto;
