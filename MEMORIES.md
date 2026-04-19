@@ -35,3 +35,7 @@ We burned more than 3 million inference tokens during the day:
 ![Udai presenting](memories/2026-01-16/udai-presenting-dg.jpeg)
 
 ![Jason presenting](memories/2026-01-16/jason-presenting-dg.jpeg)
+
+## 17-Apr-2026 - Agent Framework Dev Day
+
+![Bill explaining agent fundamentals](memories/2026-04-17/bill-explaining-agent-fundamentals.png)
